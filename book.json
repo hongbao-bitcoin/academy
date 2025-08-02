@@ -1,0 +1,73 @@
+{
+  "title": "Hongbao Academy - Learn Bitcoin",
+  "description": "Your gateway to understanding Bitcoin through the tradition of digital red envelopes",
+  "author": "Hongbao Academy",
+  "language": "en",
+  "plugins": [
+    "theme-default",
+    "search",
+    "lunr",
+    "sharing",
+    "fontsettings",
+    "highlight",
+    "favicon",
+    "github",
+    "expandable-chapters",
+    "copy-code-button",
+    "back-to-top-button",
+    "page-toc-button"
+  ],
+  "pluginsConfig": {
+    "theme-default": {
+      "showLevel": true,
+      "styles": {
+        "website": "styles/website.css"
+      }
+    },
+    "favicon": {
+      "shortcut": "assets/favicon.ico",
+      "bookmark": "assets/favicon.ico"
+    },
+    "github": {
+      "url": "https://github.com/hongbao-project/academy"
+    },
+    "sharing": {
+      "facebook": true,
+      "twitter": true,
+      "google": false,
+      "linkedin": true,
+      "weibo": true,
+      "instapaper": false,
+      "vk": false,
+      "all": [
+        "facebook", "twitter", "linkedin", "weibo"
+      ]
+    },
+    "fontsettings": {
+      "theme": "white",
+      "family": "sans",
+      "size": 2
+    }
+  },
+  "variables": {
+    "themeColor": "#FF6B6B",
+    "accentColor": "#FFA500"
+  },
+  "styles": {
+    "website": "styles/website.css",
+    "pdf": "styles/pdf.css",
+    "epub": "styles/epub.css"
+  },
+  "pdf": {
+    "pageNumbers": true,
+    "fontSize": 12,
+    "fontFamily": "Arial",
+    "paperSize": "a4",
+    "margin": {
+      "right": 62,
+      "left": 62,
+      "top": 56,
+      "bottom": 56
+    }
+  }
+}

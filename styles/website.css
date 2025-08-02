@@ -1,0 +1,296 @@
+/* Hongbao Academy Custom Styles */
+
+/* Color Variables */
+:root {
+  --primary-color: #FF6B6B;
+  --secondary-color: #FFA500;
+  --bitcoin-orange: #F7931A;
+  --text-dark: #2c3e50;
+  --bg-light: #f8f9fa;
+  --success-color: #4CAF50;
+  --warning-color: #ff9800;
+  --danger-color: #f44336;
+}
+
+/* General Styling */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--text-dark);
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+h1 {
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+}
+
+/* Links */
+a {
+  color: var(--bitcoin-orange);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+/* Navigation */
+.book-summary {
+  background: var(--bg-light);
+  border-right: 1px solid #e0e0e0;
+}
+
+.book-summary ul.summary li.active > a {
+  color: var(--primary-color);
+  border-left: 3px solid var(--primary-color);
+  background: rgba(255, 107, 107, 0.1);
+}
+
+.book-summary ul.summary li a:hover {
+  background: rgba(255, 107, 107, 0.05);
+  color: var(--primary-color);
+}
+
+/* Page Content */
+.markdown-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Code Blocks */
+pre {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 12px;
+  overflow-x: auto;
+}
+
+code {
+  background-color: #f5f5f5;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  color: var(--primary-color);
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+}
+
+table th {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+table tr:hover {
+  background-color: var(--bg-light);
+}
+
+/* Cards */
+table[data-view="cards"] {
+  border: none;
+  margin: 20px 0;
+}
+
+table[data-view="cards"] td {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+table[data-view="cards"] td:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid var(--bitcoin-orange);
+  background: var(--bg-light);
+  padding: 15px 20px;
+  margin: 20px 0;
+  font-style: italic;
+}
+
+/* Alerts and Callouts */
+.alert {
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+
+.alert-info {
+  background-color: #e3f2fd;
+  border-left: 4px solid #2196f3;
+}
+
+.alert-success {
+  background-color: #e8f5e9;
+  border-left: 4px solid var(--success-color);
+}
+
+.alert-warning {
+  background-color: #fff3e0;
+  border-left: 4px solid var(--warning-color);
+}
+
+.alert-danger {
+  background-color: #ffebee;
+  border-left: 4px solid var(--danger-color);
+}
+
+/* Custom Components */
+.hongbao-tip {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.bitcoin-address {
+  font-family: 'Courier New', monospace;
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 4px;
+  word-break: break-all;
+  border: 1px dashed var(--bitcoin-orange);
+}
+
+/* Emojis in Headers */
+h1:has(🧧), h2:has(🧧), h3:has(🧧) {
+  color: var(--primary-color);
+}
+
+/* Progress Indicators */
+.progress {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  padding: 3px;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  background-color: var(--bitcoin-orange);
+  height: 20px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Search Results */
+.search-results {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 10px;
+  background: white;
+}
+
+.search-results .has-results .search-results-item {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 10px 0;
+}
+
+.search-results .has-results .search-results-item:hover {
+  background: var(--bg-light);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .markdown-section {
+    padding: 10px;
+  }
+  
+  table {
+    font-size: 14px;
+  }
+  
+  pre {
+    font-size: 12px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .book-summary,
+  .book-header,
+  .navigation {
+    display: none;
+  }
+  
+  .markdown-section {
+    max-width: 100%;
+  }
+  
+  a {
+    color: var(--text-dark);
+  }
+}
+
+/* Animations */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Special Hongbao Styling */
+.hongbao-icon {
+  color: var(--primary-color);
+  font-size: 1.2em;
+}
+
+/* Bitcoin Logo Colors */
+.bitcoin-logo {
+  color: var(--bitcoin-orange);
+}
+
+/* Custom Lists */
+ul li::marker {
+  color: var(--bitcoin-orange);
+}
+
+/* Footer */
+.page-footer {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 20px;
+  margin-top: 40px;
+  text-align: center;
+  color: #666;
+}
